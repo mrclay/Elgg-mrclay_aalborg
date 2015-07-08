@@ -18,7 +18,3 @@ You **must** rename this folder `mrclay_aalborg` inside `mod`.
 - Increases whitespace between filter tabs and listings
 - User profile: Removes latest wire post, increases whitespace below name and the top of tag lists
 - Lists of users use 2 columns on wider viewports
-
-## TODO
-
-- Move topbar (and login link) into masthead area
