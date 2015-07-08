@@ -1,6 +1,8 @@
 
 # Aalborg Extras
 
+You **must** rename this folder `mrclay_aalborg` inside `mod`.
+
 ## Features
 
 - Integrates "topbar" menu into site menu area
