@@ -1,0 +1,108 @@
+
+.elgg-sidebar {
+	padding-top: 25px;
+}
+.elgg-page-navbar {
+	padding: 0;
+}
+
+.mrclay-aalborg-account {
+	float: right;
+}
+.mrclay-aalborg-account .elgg-menu-topbar .elgg-icon {
+	color: #fff;
+}
+.mrclay-aalborg-account .elgg-menu-topbar img {
+	border: 1px solid #fff;
+	opacity: 1 !important;
+	vertical-align: top;
+	border-radius: 0;
+}
+
+.mrclay-aalborg-account .elgg-menu-topbar > li > * {
+	margin: 0;
+	padding: 15px 10px 15px;
+	line-height: 18px;
+}
+
+.mrclay-aalborg-account .elgg-menu-topbar > li > .elgg-avatar {
+	padding: 11px 10px 10px;
+}
+
+.mrclay-aalborg-account .elgg-menu-topbar > li:hover > * {
+	background-color: #60B8F7;
+	color: #FFF;
+}
+
+/* push menu to left into viewport */
+ul.elgg-menu-hover[data-elgg-menu-data*="mrclay_aalborg_topbar"] {
+	margin-left: -140px;
+}
+
+.elgg-menu-filter + .elgg-list,
+.elgg-htabs + .elgg-list,
+.elgg-menu-filter + p,
+.elgg-htabs + p {
+	margin-top: 10px;
+}
+
+#profile-details h2.p-name {
+	margin-bottom: .5em;
+}
+
+#profile-details .elgg-tags {
+	margin-top: 6px;
+}
+
+.elgg-main > .elgg-list > li.elgg-item-user {
+	display: inline-block;
+	vertical-align: top;
+	width: 48%;
+	margin-right: 2%;
+}
+
+@media (max-width: 1030px) {
+	.elgg-more {
+		width: auto;
+		padding-right: 20px;
+	}
+}
+
+@media (min-width: 821px) {
+	.elgg-menu-page {
+		margin: 25px 0 25px -31px;
+		border-left: 5px solid #ccc;
+		padding-left: 26px;
+	}
+	.elgg-menu-page + .elgg-menu-page {
+		margin-top: -10px;
+	}
+
+	.elgg-menu-extras {
+		margin-top: 30px;
+	}
+}
+
+@media (max-width: 820px) {
+	.elgg-main {
+		padding: 12px 10px 10px;
+	}
+}
+
+@media (max-width: 766px) {
+	.mrclay-aalborg-account .elgg-menu-topbar > li > a {
+		padding: 12px 10px 10px;
+	}
+	.mrclay-aalborg-account .elgg-menu-topbar > li > .elgg-avatar {
+		padding: 7px 10px 6px;
+	}
+
+	.mrclay-aalborg-account .elgg-child-menu {
+		top: 40px;
+	}
+
+	.elgg-main > .elgg-list > li.elgg-item-user {
+		width: auto;
+		margin-right: 0;
+	}
+}
