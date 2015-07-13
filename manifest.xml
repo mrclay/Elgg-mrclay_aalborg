@@ -16,4 +16,32 @@
         <type>plugin</type>
         <name>aalborg_theme</name>
     </requires>
+
+    <screenshot>
+        <path>screenshots/00_overall.png</path>
+    </screenshot>
+    <screenshot>
+        <path>screenshots/01_tablet-layout.png</path>
+    </screenshot>
+    <screenshot>
+        <path>screenshots/02_sidebar1.png</path>
+    </screenshot>
+    <screenshot>
+        <path>screenshots/03_topbar-hover1.png</path>
+    </screenshot>
+    <screenshot>
+        <path>screenshots/04_topbar-hover2.png</path>
+    </screenshot>
+    <screenshot>
+        <path>screenshots/05_pages-icons.png</path>
+    </screenshot>
+    <screenshot>
+        <path>screenshots/06_page.png</path>
+    </screenshot>
+    <screenshot>
+        <path>screenshots/07_login-to-comment1.png</path>
+    </screenshot>
+    <screenshot>
+        <path>screenshots/08_login-to-comment2.png</path>
+    </screenshot>
 </plugin_manifest>

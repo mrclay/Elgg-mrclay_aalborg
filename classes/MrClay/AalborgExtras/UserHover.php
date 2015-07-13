@@ -10,6 +10,8 @@ class UserHover {
 		}
 		$action_section = new MenuList(elgg_extract('action', $v, []));
 
+		$action_section->remove('avatar:edit');
+
 		$user = $p['entity'];
 		/* @var \ElggUser $user */
 
@@ -34,18 +36,11 @@ class UserHover {
 		}
 
 		$item = \ElggMenuItem::factory(array(
-			'name' => 'settings',
-			'text' => elgg_echo('settings'),
-			'href' => "settings/user/{$user->username}",
-		));
-		$action_section->move($item, 0);
-
-		$item = \ElggMenuItem::factory(array(
 			'name' => 'logout',
-			'text' => elgg_echo('logout'),
+			'text' => elgg_view_icon('sign-out') . elgg_echo('logout'),
 			'href' => elgg_add_action_tokens_to_url("action/logout"),
 		));
-		$action_section->move($item, 0);
+		$action_section->push($item);
 
 		$v['action'] = $action_section->getItems();
 		return $v;

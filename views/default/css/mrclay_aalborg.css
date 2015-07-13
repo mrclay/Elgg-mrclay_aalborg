@@ -1,16 +1,46 @@
 
 .elgg-sidebar {
 	padding-top: 25px;
+	border-left: 0;
 }
+
+.elgg-page-header {
+	background: #fff;
+}
+
+.elgg-heading-site,
+.elgg-heading-site:hover {
+	text-shadow: none;
+	color: #5DABE7;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.elgg-heading-main {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+	font-weight: 400;
+}
+
 .elgg-page-navbar {
 	padding: 0;
+	background: #5DABE7;
+}
+.elgg-page-navbar > .elgg-inner {
+	padding-left: 10px;
+}
+
+.elgg-button-dropdown {
+	color: #5DABE7;
 }
 
 .mrclay-aalborg-account {
 	float: right;
+	margin-top: -4px;
 }
+
 .mrclay-aalborg-account .elgg-menu-topbar .elgg-icon {
-	color: #fff;
+	color: #5DABE7;
 }
 .mrclay-aalborg-account .elgg-menu-topbar img {
 	border: 1px solid #fff;
@@ -19,24 +49,65 @@
 	border-radius: 0;
 }
 
+.elgg-menu-hover {
+	min-width: 300px;
+}
+.elgg-menu-hover a {
+	display: block;
+}
+.elgg-menu-hover .elgg-image-block {
+	padding: 0;
+}
+.elgg-menu-hover .elgg-image-block .mrclay-aalborg-avatar:hover {
+	background-color: inherit;
+}
+.elgg-menu-hover .elgg-image-block .elgg-body {
+	padding: 10px 10px 10px 0;
+}
+.elgg-menu-hover .elgg-image-block .elgg-body ul {
+	margin-top: 10px;
+}
+.elgg-menu-hover .elgg-image-block .elgg-body a {
+	padding: 3px 18px;
+}
+
+.elgg-menu-hover > li a.mrclay-aalborg-avatar {
+	padding: 10px;
+	position: relative;
+}
+.mrclay-aalborg-avatar img {
+	display: block;
+	width: 100px;
+	height: 100px;
+}
+.mrclay-aalborg-avatar span {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+	padding: 2px 0;
+	text-align: center;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.9);
+}
+
+.elgg-heading-basic {
+	color: inherit;
+}
+
 .mrclay-aalborg-account .elgg-menu-topbar > li > * {
 	margin: 0;
-	padding: 15px 10px 15px;
+	padding: 10px 10px 10px;
 	line-height: 18px;
 }
 
 .mrclay-aalborg-account .elgg-menu-topbar > li > .elgg-avatar {
-	padding: 11px 10px 10px;
-}
-
-.mrclay-aalborg-account .elgg-menu-topbar > li:hover > * {
-	background-color: #60B8F7;
-	color: #FFF;
+	padding: 5px 10px 5px;
 }
 
 /* push menu to left into viewport */
 ul.elgg-menu-hover[data-elgg-menu-data*="mrclay_aalborg_topbar"] {
-	margin-left: -140px;
+	margin-left: -266px;
 }
 
 .elgg-menu-filter + .elgg-list,
@@ -50,7 +121,7 @@ ul.elgg-menu-hover[data-elgg-menu-data*="mrclay_aalborg_topbar"] {
 	margin-bottom: .5em;
 }
 
-#profile-details .elgg-tags {
+body .elgg-tags {
 	margin-top: 6px;
 }
 
@@ -59,6 +130,81 @@ ul.elgg-menu-hover[data-elgg-menu-data*="mrclay_aalborg_topbar"] {
 	vertical-align: top;
 	width: 48%;
 	margin-right: 2%;
+}
+
+.elgg-menu-hover .elgg-menu-item-logout {
+	padding: 10px;
+	border-top: 1px solid #ddd;
+	text-align: center;
+}
+.elgg-menu-hover .elgg-menu-item-logout a {
+	display: inline-block;
+	padding: 3px 13px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.elgg-menu-hover .elgg-menu-item-logout span {
+	margin-right: 5px;
+}
+
+.elgg-menu-item-logout a:hover .elgg-icon {
+	color: #4690D6;
+}
+
+#current-user-avatar img,
+.elgg-form-avatar-upload .elgg-input-file,
+#user-avatar-preview {
+	margin-top: 10px;
+}
+
+.elgg-menu-footer-meta {
+	float: right;
+}
+.elgg-menu-footer > .elgg-menu-item-powered > a {
+	color: #ccc;
+}
+
+.elgg-image img[src$="/pages/pages.gif"] {
+	width: 25px;
+	height: 25px;
+}
+
+body .treeview {
+	margin-top: 8px;
+}
+body .treeview li {
+	/*padding: 0 0 6px 16px;*/
+}
+body .treeview li a {
+	margin-left: 5px;
+	position: relative;
+	top: -4px;
+}
+
+.elgg-pages-sidebar-nav h3 {
+	display: none;
+}
+
+#thewire-characters-remaining {
+	font-weight: inherit;
+	color: #999;
+}
+
+.elgg-breadcrumbs + .elgg-head > .elgg-heading-main {
+	padding-top: 10px;
+}
+
+.developers-gear-popup {
+	text-align: center;
+}
+
+.mrclay-aalborg-login {
+	padding: 10px;
+	text-align: center;
+}
+
+.elgg-form-comment-save > fieldset > div > label:first-child {
+	display: block;
+	margin-bottom: -10px;
 }
 
 @media (max-width: 1030px) {
@@ -72,7 +218,7 @@ ul.elgg-menu-hover[data-elgg-menu-data*="mrclay_aalborg_topbar"] {
 	.elgg-menu-page {
 		margin: 25px 0 25px -31px;
 		border-left: 5px solid #ccc;
-		padding-left: 26px;
+		padding-left: 21px;
 	}
 	.elgg-menu-page + .elgg-menu-page {
 		margin-top: -10px;
@@ -90,11 +236,26 @@ ul.elgg-menu-hover[data-elgg-menu-data*="mrclay_aalborg_topbar"] {
 }
 
 @media (max-width: 766px) {
+	.mrclay-aalborg-account {
+		margin-top: 0;
+		padding-top: 16px;
+		position: absolute;
+		right: -10px;
+		top: 100%;
+		z-index: 1000;
+	}
+	.mrclay-aalborg-account > ul {
+		float: right;
+	}
+	.mrclay-aalborg-account + h1 {
+		clear: both;
+	}
+
 	.mrclay-aalborg-account .elgg-menu-topbar > li > a {
-		padding: 12px 10px 10px;
+		padding: 3px 10px 4px;
 	}
 	.mrclay-aalborg-account .elgg-menu-topbar > li > .elgg-avatar {
-		padding: 7px 10px 6px;
+		padding: 0 10px 0;
 	}
 
 	.mrclay-aalborg-account .elgg-child-menu {
@@ -104,5 +265,18 @@ ul.elgg-menu-hover[data-elgg-menu-data*="mrclay_aalborg_topbar"] {
 	.elgg-main > .elgg-list > li.elgg-item-user {
 		width: auto;
 		margin-right: 0;
+	}
+
+	.mrclay-aalborg-account .elgg-menu-topbar .elgg-icon {
+		color: #fff;
+	}
+}
+
+@media (min-width: 520px) {
+	.elgg-river-layout .elgg-river-selector {
+		margin-top: -33px;
+	}
+	.elgg-river-layout .elgg-list-river {
+		border-top: 0;
 	}
 }

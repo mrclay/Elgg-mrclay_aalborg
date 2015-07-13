@@ -13,4 +13,24 @@ define('mrclay_aalborg', function(require){
 			return false;
 		}
 	});
+
+	$(document).on('click', '.mrclay-aalborg-login a', function(e) {
+		e.preventDefault();
+
+		var offset = $(this).offset();
+
+		$('.mrclay-aalborg-account a').trigger('click');
+		var $box = $('#login-dropdown-box');
+		var height = $box.height();
+		var width = $box.width();
+
+		$box.css({
+				left: (offset.left - width/2) + 'px',
+				top: (offset.top - height - 50) + 'px'
+			})
+			.find('[name="username"]')
+			.focus();
+
+		return false;
+	});
 });
