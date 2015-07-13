@@ -7,6 +7,11 @@ elgg_register_event_handler('init', 'system', __NAMESPACE__ . '\\init_late', 100
 function init_late() {
 	elgg_extend_view('css/elgg', 'css/mrclay_aalborg');
 
+	elgg_register_css('fonts.Open Sans', 'https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext');
+	elgg_load_css('fonts.Open Sans');
+
+	elgg_require_js('mrclay_aalborg');
+
 	// add a topbar in the header
 	// TODO leave topbar in place and change with CSS
 	elgg_extend_view('page/elements/header', 'mrclay_aalborg/topbar', 0);
@@ -25,6 +30,7 @@ function init_late() {
 	elgg_register_plugin_hook_handler('register', 'menu:extras', 'MrClay\AalborgExtras\Files::registerExtrasMenu', 1000);
 
 	// Replace "Navigation" with "Pages"
+	// TODO cleanup
 	elgg_register_plugin_hook_handler('view', 'pages/sidebar/navigation', function($h, $t, $v, $p) {
 		$v = preg_replace('~<h3>.*?</h3>~', '<h3>' . elgg_echo('pages') . '</h3>', $v, 1);
 		return $v;
@@ -54,6 +60,7 @@ function init_late() {
 	$path = substr(current_page_url(), strlen(elgg_get_site_url()));
 
 	// remove duplicate title from page view
+	// TODO cleanup
 	if (preg_match('~^pages/view/(\d+)~', $path, $m)) {
 		$guid = (int)$m[1];
 
@@ -121,9 +128,4 @@ function init_late() {
 //		};
 //		elgg_register_plugin_hook_handler('view_vars', 'page/elements/html', $classes_adder);
 //	});
-
-	elgg_register_css('fonts.Open Sans', 'https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext');
-	elgg_load_css('fonts.Open Sans');
-
-	elgg_require_js('mrclay_aalborg');
 }
